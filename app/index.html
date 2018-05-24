@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Sensei</title>
+
+    	<meta name="author" content="Dain Saint">
+		<meta name="description" content="Sensei">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body onload="main();" >
+
+    	<div id="content">
+        	<canvas id="canvas" width="320" height="568"></canvas>
+		</div>
+		<div id="footer">
+			<p></p>
+		</div>
+	</body>
+
+	<!-- FIREBASE -->
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBC5e6nPV0QGOeleyMHSQXtjzzwjdmvNUA",
+	    authDomain: "sensei-9043e.firebaseapp.com",
+	    databaseURL: "https://sensei-9043e.firebaseio.com",
+	    projectId: "sensei-9043e",
+	    storageBucket: "sensei-9043e.appspot.com",
+	    messagingSenderId: "558604675020"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+
+	<!-- VENDOR -->
+
+
+	<script src="js/vendor/howler.min.js"></script>
+	<script src="js/vendor/sugar.min.js"></script>
+	<script src="js/vendor/Rx.min.js"></script>
+
+	<!-- BOILERPLATE -->
+	<script src="js/data.js"></script>
+	<script src="js/main.js"></script>
+
+</html>
